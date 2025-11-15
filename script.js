@@ -90,9 +90,9 @@ X2s.forEach((e, i) => {
 audios.forEach((e, i) => {
     e.addEventListener("ended", function () {
         starts[i].innerHTML = `<i class="fa fa-play" aria-hidden="true"></i>`
-        resets[i].style.background = "gray"
         audios[i].classList.remove("played")
         reds[i].style.display="none"
     })
 });
+
 ////////////////////////////////////////////////////////////////////////////////////////
