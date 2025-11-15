@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.sound_containetr{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.sound_pannel{
+    width: 95%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap:30px 40px;
+    padding: 20px;
+}
+.sound>h3{
+    color: silver;
+    padding: 2px 3px;
+    background-color: rgba(0, 0, 0, 0.628);
+    border-radius: 5px 5px 0px 0px;
+}
+.sound{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+.sound_box{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    max-width: 440px;
+    background-size: cover;
+    background-position: 50% 60%;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px ;
+}
+.button_panel{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#000000af ;
+    border-radius: 5px;
+}
+.control_buttons{
+    width: 45px;
+    height: 45px;
+    border: 2px inset black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    flex-grow: 1;
+    border-radius: 5px;
+    i{
+        color: rgb(255, 34, 0);
+    }
+}
+.control_buttons:active{
+    border: 2px outset black;
+}
+.red_circle{
+    width: 10px;
+    height: 10px;
+    background-color: #E51400;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid white;
+    display: none;
+}
